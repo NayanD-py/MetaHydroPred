@@ -13,15 +13,6 @@
 - Acetate  
 - Complex substrates  
 
----
-
-## Method Summary
-- Baseline models are trained on different base feature sets (BF sets).
-- Meta-features are generated using LOOCV-based stacking.
-- A pre-trained meta-model integrates baseline predictions.
-- Predictions are inverse-transformed to the original scale.
-
----
 
 ## Usage
 
