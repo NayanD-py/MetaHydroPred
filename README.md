@@ -2,9 +2,6 @@
 
 **MetaHydroPred** is a meta-learning framework for predicting **current density** and **H₂ production rate** in microbial electrochemical cells (MECs). The framework combines predictions from multiple baseline machine-learning models using a stacked meta-model to improve robustness across heterogeneous substrates and experimental conditions.
 
-**Author:** Nayan Dash  
-**Date:** 3 Aug 2024  
-
 ---
 
 ## Supported Predictions
@@ -50,9 +47,6 @@ python predict_h2_production_rate.py \
 
 **Input**
 - Test dataset in CSV format
-- Pre-trained baseline models (`.joblib`)
-- Pre-trained meta-model (`.joblib`)
-- Meta-feature training CSV (for feature alignment)
 
 **Output**
 - CSV file containing:
@@ -61,42 +55,10 @@ python predict_h2_production_rate.py \
 
 ---
 
-## Requirements
-- Python ≥ 3.9  
-- NumPy  
-- SciPy  
-- pandas  
-- scikit-learn  
-- XGBoost  
-- CatBoost  
-- LightGBM  
-- joblib  
-
-(Exact library versions are printed at runtime.)
-
----
-
-## Reproducibility
-- Fixed random seed used across all models
-- LOOCV-based meta-feature generation
-- Consistent feature scaling and transformations
-- Feature selection based on correlation filtering and tree-based importance scoring
-
----
-
-## Data and Code Availability
 
 - **Web server:**  
   https://balalab-skku.org/MetaHydroPred/  
   (All processed datasets used in this study are available for download.)
-
-- **Source code:**  
-  Publicly available on GitHub:  
-  **[GitHub repository URL]**
-
 ---
-
-## Citation
-If you use this code, please cite the associated manuscript:
 
 > *MetaHydroPred: a meta-learning framework for predicting current density and H₂ production rate in microbial electrochemical cells.*
